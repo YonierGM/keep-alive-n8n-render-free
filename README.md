@@ -1,40 +1,46 @@
-Interfaz de ping para el webhook de n8n
-Este es un proyecto simple de React con Vite que envía pings a un webhook de n8n para mantener una instancia gratuita de Render.com despierta y activa.
+# ⚡ Interfaz de Ping para el Webhook de n8n
 
-Características
-Pinging automático: Envía una solicitud a un webhook de n8n cada 10 minutos.
+Este es un proyecto simple de **React con Vite** que envía pings a un webhook de **n8n** para mantener una instancia gratuita de **Render.com** despierta y activa.
 
-Interfaz de usuario simple: Muestra el estado del último ping y la hora del último ping exitoso.
+---
 
-Variables de entorno seguras: Utiliza variables de entorno para proteger la URL de tu webhook.
+## ✨ Características
 
-Requisitos
-Node.js (versión 14 o superior)
+- 🔄 **Pinging automático:** Envía una solicitud a un webhook de **n8n** cada 10 minutos.
+- 🖥 **Interfaz de usuario simple:** Muestra el estado del último ping y la hora del último ping exitoso.
+- 🔐 **Variables de entorno seguras:** Utiliza `.env` para proteger la URL de tu webhook.
 
-Un webhook de n8n configurado para responder con un mensaje.
+---
 
-Una instancia de Render.com (Plan gratuito).
+## 📋 Requisitos
 
-Configuración e instalación
-Clona el repositorio en tu máquina local:
+- [Node.js](https://nodejs.org/) (versión **14 o superior**)
+- Un **webhook de n8n** configurado para responder con un mensaje.
+- Una instancia de **Render.com** (Plan gratuito).
 
-git clone https://github.com/YonierGM/keep-alive-n8n-render-free
-cd keep-alive-n8n-render-free
+---
 
-Instala las dependencias del proyecto:
+## 🚀 Configuración e instalación
 
-npm install
+1. **Clona el repositorio:**
+   ```bash
+   git clone https://github.com/YonierGM/keep-alive-n8n-render-free
+   cd keep-alive-n8n-render-free
+---
 
-Crea un archivo .env en la raíz de tu proyecto con la URL de tu webhook de n8n:
+2. **Instala las dependencias:**
+   ```bash
+   npm install
+---
 
-VITE_N8N_WEBHOOK_URL="TU_WEBHOOK_URL_AQUI"
+3. **Configura el archivo .env:**
+   Crea un archivo .env en la raíz del proyecto con el contenido:
+   ```bash
+   VITE_N8N_WEBHOOK_URL=https://tu-webhook-de-n8n.com/webhook/keep-alive
+---
 
-Importante: Asegúrate de reemplazar TU_WEBHOOK_URL_AQUI con la URL real de tu webhook.
-
-Añade el archivo .env a tu .gitignore para que no se suba al repositorio de GitHub:
-
-# .gitignore
-
-Para ejecutar la aplicación en modo de desarrollo:
-
-npm run dev
+4. **Uso:**
+   Ejecuta el proyecto en modo desarrollo:
+   ```bash
+   npm run dev
+---
