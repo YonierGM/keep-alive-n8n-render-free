@@ -68,7 +68,7 @@ function App() {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100 p-4">
+    <div className="flex w-screen flex-col items-center justify-center min-h-screen bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100 p-4">
       <div className="bg-white dark:bg-gray-800 shadow-xl rounded-2xl p-8 w-full max-w-lg text-center transform transition-all hover:scale-105 duration-300">
         <h1 className="text-3xl font-bold mb-4">Estado del Webhook de n8n</h1>
         
