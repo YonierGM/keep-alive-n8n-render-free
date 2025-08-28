@@ -61,7 +61,7 @@ function App() {
       hour: '2-digit',
       minute: '2-digit',
       hour12: true,
-      timeZone: 'America/New_York',
+      timeZone: 'America/bogota' // Ajusta la zona horaria según sea necesario,
     };
 
     return new Intl.DateTimeFormat('es-ES', options).format(date);
